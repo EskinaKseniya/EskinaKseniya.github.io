@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+	<meta charset = "UTF-8">
+	<title>Ксения делает домашку</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- <header class="header"> 
+		<div class="logo">
+			<img src="https://pngpress.com/wp-content/uploads/2020/08/uploads_github_github_PNG68.png" alt="bar"  width="150" height="150"> <p> </p>
+		</div>
+			<h1 align="center"> 
+				<div class="nazvan">WeLoveCats	</div>
+			</h1>
+	</header> -->
+	<header>
+	<div class = "header">
+		<img class = "logo" src = "https://pngpress.com/wp-content/uploads/2020/08/uploads_github_github_PNG68.png" alt="logo" >
+			<div class = "heading"  > <h1 >  WeLoveCats </h1> </div>
+	</div>			
+	</header>
+	<div class="vnefon">
+<main>
+<div class="z" >
+<h2> Добро пожаловать на кошачий сайт! </h2>
+ <nav>
+             <ul class = "menu">
+                 <li> <a href = "#Статья"> Статья </a></li>
+                 <li> <a href = "#Таблица"> Таблица</a></li>
+                 <li> <a href = "#Форма"> Форма</a></li>
+            </ul>
+        </nav>
+</div>
+	<h3 class="zadaniya"> Задания: </h3>
+	<div class="fon">
+		<ol>
+			<li>Абсолютная гиперссылка на главную страницу сайта example.com <a href="http://example.com">Сайтик</a></li>
+			<li>Абсолютная гиперссылка на главную сайта example.com в протоколе https <a href="https://example.com">Сайтик_1.0</a></li>
+			<li>Ссылка на файл на сервере FTP без авторизации <a href ="ftp://example.com/Temp/file.txt" > Файлик </a></li>
+			<li>Ссылка на файл на сервере FTP с авторизацией <a href = "ftp://user:pass123@example.com/Temp/file.txt"> Файлик_1.0 </a></li>
+			<li>Ссылка на фрагмент страницы некоторого сайта<a href = "https://example.com#top"> Начало </a> </li>
+			<li>Ссылка на фрагмент текущей страницы<a href = "#img"> что-то </a> </li>
+			<li>Cсылка с двумя параметрами в URL <a href = "https://example.com?product=1234&utm_source=googleExampleDomain"> example.com </a></li>
+			<li>Список ссылок основной навигации сайта с подписями title:
+				<ul>
+					<li> <a href ="http://example.com/Основное:Новые_страницы" title="Список недавно созданных страниц "> Новая страница </a> </li>
+					<li> <a href ="http://example.com/Основное:Форум" title="Форум участников сообщества "> Форум </a> </li>
+					<li> <a href ="http://example.com/Основное:Новости" title="Статьи о текущих событиях в мире"> Новости </a> </li>
+				</ul>
+			</li>
+			<li>Ссылка без href: <a> без href </a> </li>
+			<li>Ссылка с пустым href: <a href = "">пустой href</a></li>
+			<li>Ссылка, по которой запрещен переход поисковикам<a href ="http://example.com" rel="nofollow"> Нежелательная ссылка </a> </li>
+			<li>Ссылка, запрещенная для индексации поисковиками <noindex--> <a href ="http://example.com" rel="nofollow"> Неиндексируемая ссылка </a> </noindex--> </li>
+			<li> Ссылка контекстная в тексте абзаца:
+						<p id="Статья">
+						Кот Шрёдингера — мысленный эксперимент, предложенный одним из создателей <a href = "https://ru.wikipedia.org/wiki/Квантовая_механика"> квантовой механики </a>
+						Эрвином Шрёдингером в 1935 году при обсуждении физического смысла волновой функции. 
+						В ходе эксперимента возникает <a href ="https://ru.wikipedia.org/wiki/Принцип_суперпозиции_(квантовая_механика)"> суперпозиция </a> живого и мёртвого кота, что выглядит абсурдно с точки зрения здравого смысла. </p> </li>
+			<li>Ссылка-изображение
+			 <br /> <a id="img"> </a> <a href="https://www.youtube.com/watch?v=XtHmxYbyfis"><img alt ="cat" src="https://i.pinimg.com/564x/8a/4b/cd/8a4bcdf90cd739ce147de8b0ba021f5d.jpg" height = "400" width = "400">  </a> 
+			</li>
+			<li> Ссылки из прямоугольных и круглых областей картинки:
+				<map name = "click">
+					<area alt="тортик" shape = "rect" coords = "250,250,400,400" href = "https://ru.wikipedia.org/wiki/Торт" title = "тортик">
+					<area alt="котик" shape = "circle" coords = "350,200,200" href = "https://ru.wikipedia.org/wiki/Кошка" title = "котик">
+				</map>
+				<img alt="Картинка" src = "https://i.pinimg.com/750x/4c/22/a1/4c22a1b1b7ff5935f18ee87dd6f85c40.jpg" height = "400" width = "600" usemap = "#click">
+			</li>
+			<li><a href ="./example.html "> Относительная ссылка на страницу в текущем каталоге </a> </li>
+			<li> <a href ="./about/example.html "> Относительная ссылка на страницу в каталоге about </a> </li>
+			<li> <a href ="../example.html "> Относительная ссылка на страницу в каталоге уровнем выше текущего </a> </li>
+			<li> <a href ="../../example.html "> Относительная ссылка на страницу в каталоге двумя уровнями выше </a> </li>
+			<li> <a href = "/" > Сокращенная ссылка на главную страницу </a> </li>
+			<li> <a href = "/example.html" > Сокращенная ссылка на внутреннюю страницу </a> </li>
+		</ol>
+		<div class="tablecol">
+          <p id = "Таблица"><b> Табллица: </b></p>
+           <table class = "table2">
+             <tr>
+                 <th class = "table1">'1'</th>
+                 <th class  = "table">'2'</th>
+                 <th class = "table1">'3'</th>
+                 <th class  = "table">'4'</th>
+                 <th class = "table1">'5'</th>
+
+             </tr>
+             <tr>
+                 <th class  = "table">'6'</th>
+                 <th class = "table1">'7'</th>
+                 <th class  = "table">'8'</th>
+                 <th class = "table1">'9'</th>
+                 <th class  = "table">'10'</th>
+
+             </tr>
+             <tr>
+                 <th class = "table1">'11'</th>
+                 <th class  = "table">'12'</th>
+                 <th class = "table1">'13'</th>
+                 <th class  = "table">'14'</th>
+                 <th class = "table1">'15'</th>
+
+             </tr>
+             <tr>
+                 <th class  = "table">'16'</th>
+                 <th class = "table1">'17'</th>
+                 <th class  = "table">'18'</th>
+                 <th class = "table1">'19'</th>
+                 <th class  = "table">'20'</th>
+
+             </tr>
+             <tr>
+                 <th class = "table1">'21'</th>
+                 <th class  = "table">'22'</th>
+                 <th class = "table1">'23'</th>
+                 <th class  = "table">'24'</th>
+                 <th class = "table1">'25'</th>
+
+             </tr>
+            </table>
+        </div>
+	<div>
+	<h4 id = "Форма"> ФОРМА  </h4>
+		<form action = "/" method = "POST">
+			
+			<label> <strong> Имя: </strong> 
+			<br /> <input name="field-name-1" value = "Введите Ваше имя" />
+			</label> <br /> 
+			<br />
+			<label> <strong> E-mail: </strong>
+			<br /> <input name = "field-email" value = "test@example.com" type = "email" />
+			</label> <br />
+			<br />
+			<label> <strong> Дата рождения: </strong>
+			<br /> <input name = "field-date" value = "2021-09-14" type = "date" />
+			</label> <br />
+			<br />
+			<strong> Пол: </strong> <br />
+			<label><input type = "radio" name = "radio-group-1" value = "Значение 1"/> Мужской </label>
+			<label><input type = "radio" name = "radio-group-1" value = "Значение 2"/> Женский </label>
+			<br /><br />
+			<strong> Количество конечностей: </strong> <br />
+			<label><input type = "radio" name = "radio-group-2" value = "Значение 1"/> 1 </label>
+			<label><input type = "radio" name = "radio-group-2" value = "Значение 2"/> 2 </label>
+			<label><input type = "radio" name = "radio-group-2" value = "Значение 3"/> 3 </label>
+			<label><input type = "radio" name = "radio-group-2" value = "Значение 4"/> 4 </label>
+			<br /><br />
+			<label>
+			<strong> Суперспособности: </strong>
+			<br />
+			<select name="field-name-4[]"
+			multiple="multiple">
+			<option value="Значение1" > Перемещаться во времени </option>
+			<option value="Значение2" selected="selected"> Высыпаться во время сессии </option>
+			<option value="Значение3" selected="selected"> 6 чувство </option>
+			</select>
+			</label><br /> <br />
+			<label>
+			<strong> Биография: </strong> <br />
+			<textarea name="field-name-2"> Напишите Вашу биографию </textarea>
+			</label><br />
+			<br />
+			<label><input type="checkbox" name="check-1" /> С контрактом ознакомлен(а) </label> 
+			<br /> <br />
+			<input type="submit" value="Отправить" />
+			<br /> <br />
+    </form>
+	</div>
+	</div>
+	</main>
+	</div>
+	 <footer>
+      <p>Компания © WeLoveCats. Все права защищены.</p>
+    </footer>
+	
+</body>
+</html>
