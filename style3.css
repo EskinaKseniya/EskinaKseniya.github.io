@@ -1,0 +1,186 @@
+html, body{
+	margin: 0;
+}
+.header{
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	height: 150px;
+	/* background: url(bar.jpg) no-repeat center bottom;*/
+	background-color: #fcf0e4;
+    border: none;
+    margin-bottom: 0;
+}
+.logo
+{
+float: left;
+padding-left: 20%;
+height: 100px;
+width: 100px;
+}
+.heading
+{
+/*margin-top: -80px;*/
+float: right;
+padding-right: 5%;
+font-family: "Comic Sans MS", "Comic Sans", cursive;
+color: pink;
+font-size: 15pt;
+text-shadow: #fff -1px -1px 0, 
+             #333 1px 1px 0;
+}
+.vnefon{
+	background-image: url(kotiki-milie-5.png);
+}
+.catandcake{
+	height : 200px;
+	width: 270px;
+}
+.maskcat{
+height : 200px;
+width: 200px;
+}
+h2{
+	text-align : left;
+	font: bold 3em Arial, sans-serif;
+	color: #fcf0e4;
+	text-shadow: black 0 0 2px;
+}
+h3{
+	text-align : center;
+	font: bold 2em Arial, sans-serif;
+    color: #fcf0e4; /* Цвет текста, совпадает с цветом фона */
+    text-shadow: #5757a0 2px 2px 2px;
+}
+main{
+	/*max-width: 960px;*/
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+.fon{
+	background-color: pink;
+	/*opacity: 0.4; прозрачность*/
+}
+.zag{
+	margin-bottom: -20px;
+	margin-top: -20px;
+    margin-left: 10px;
+	font-size: 6pt;
+}
+.z{
+	font-family:"Cormorant Garamond";
+	background-color: pink;
+	outline: 2px solid #000; /* Чёрная рамка */
+    border: 3px solid #fff; /* Белая рамка */
+    border-radius: 10px; /* Радиус скругления */
+	
+}
+ul.menu
+{	 
+    margin: 0; /* Обнуляем значение отступов */
+    padding: 4px; /* Значение полей */
+	}
+.menu a
+{
+text-decoration: none;
+  font-family: sans-serif;
+  color: #5757a0;
+ 
+  padding: 10px 20px;
+  background-color: #fcf0e4;
+  border: 5px solid #5757a0;
+  }
+   ul.menu li
+{
+    display: flex; /* Отображать как строчный элемент */
+	margin-bottom: 5px;
+    margin-left: 5px; /* Отступ слева */
+    padding: 1px; /* Поля вокруг текста */
+
+}
+.f{
+	order:1;
+	
+}
+.table11
+{
+	order:2;
+}
+.table
+{
+    background-color: beige;
+}
+.table1
+{
+    background-color: darksalmon;
+}
+th {
+    padding: 1em; /* Поля вокруг содержимого таблицы */
+    border: 0.5px solid pink; /* Параметры рамки */
+   }
+table
+{
+    border-spacing:0px;
+    border-collapse: collapse;
+}
+
+.table_form{
+	display:flex;
+	flex-direction: column;
+}
+
+ footer {
+        padding: 10px 20px;
+        background: #fcf0e4;
+        color: black;
+		text-shadow: pink 0 0 2px;
+      }
+@media screen and (min-width: 800px) {
+	.heading{
+		 font-size: 35pt;
+		 float: right;
+		 padding-right: 40%;
+	 }
+	 .logo{
+		float: left;
+		padding-left: 380%;
+	 }
+	 ul.menu{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		height: 60px;
+	 }
+	main{
+		max-width: 960px;
+		margin: 0 auto;
+	}
+	h2{
+		text-align : center;
+	}
+	z{
+		text-align: center;
+		max-width: 960px;
+	}
+	ul.menu li{
+		display: inline;
+	}
+	.catandcake{
+	height : 400px;
+	width: 600px;
+	}
+	.maskcat{
+		height : 400px;
+		width: 400px;
+	}
+	.f{
+		order:2;
+	
+	}
+	.table11
+	{
+		order:1;
+	}
+}
