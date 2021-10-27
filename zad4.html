@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ксения делает домашку</title>
+
+    <link rel="stylesheet" type="text/css" href="style4.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid p-2">
+            <div class="row row-cols-auto justify-content-between justify-content-md-center align-items-center">
+                <div class="col ms-2">
+                    <img src="https://pngpress.com/wp-content/uploads/2020/08/uploads_github_github_PNG68.png" alt="Логотип" class="logo">
+                </div>
+                <div class="col me-2">
+                    <h1 class="display-4">WeLoveCats</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container-md pt-3 pe-0 ps-0 p-md-3 d-flex flex-column">
+			<nav class="grey-div container-fluid">
+			<div class="menu">
+			<div class = "zag"> <h2> Добро пожаловать на кошачий сайт! </h2> </div>
+                <div class="col-8 d-md-flex justify-content-md-around col-md-auto">
+				
+                    <a href="#refs" class="col-md-3">
+                        <div class="nav-ref p-3 m-2 text-center">
+                            Статья
+                        </div>
+                    </a>
+                    <a href="#table" class="col-md-3">
+                        <div class="nav-ref p-3 m-2 text-center">
+                            Таблица
+                        </div>
+                    </a>
+                    <a href="#form" class="col-md-3">
+                        <div class="nav-ref p-3 m-2 text-center">
+                            Форма
+                        </div>
+                    </a>
+                </div>
+				</div>
+            </nav>
+			
+                <h2>Задания</h2>
+				
+				<div  class="grey-div mt-3">
+                <ol>
+			<li>Абсолютная гиперссылка на главную страницу сайта example.com <a href="http://example.com">Сайтик</a></li>
+			<li>Абсолютная гиперссылка на главную сайта example.com в протоколе https <a href="https://example.com">Сайтик_1.0</a></li>
+			<li>Ссылка на файл на сервере FTP без авторизации <a href ="ftp://example.com/Temp/file.txt" > Файлик </a></li>
+			<li>Ссылка на файл на сервере FTP с авторизацией <a href = "ftp://user:pass123@example.com/Temp/file.txt"> Файлик_1.0 </a></li>
+			<li>Ссылка на фрагмент страницы некоторого сайта<a href = "https://example.com#top"> Начало </a> </li>
+			<li>Ссылка на фрагмент текущей страницы<a href = "#img"> что-то </a> </li>
+			<li>Cсылка с двумя параметрами в URL <a href = "https://example.com?product=1234&utm_source=googleExampleDomain"> example.com </a></li>
+			<li>Список ссылок основной навигации сайта с подписями title:
+				<ul>
+					<li> <a href ="http://example.com/Основное:Новые_страницы" title="Список недавно созданных страниц "> Новая страница </a> </li>
+					<li> <a href ="http://example.com/Основное:Форум" title="Форум участников сообщества "> Форум </a> </li>
+					<li> <a href ="http://example.com/Основное:Новости" title="Статьи о текущих событиях в мире"> Новости </a> </li>
+				</ul>
+			</li>
+			<li>Ссылка без href: <a> без href </a> </li>
+			<li>Ссылка с пустым href: <a href = "">пустой href</a></li>
+			<li>Ссылка, по которой запрещен переход поисковикам<a href ="http://example.com" rel="nofollow"> Нежелательная ссылка </a> </li>
+			<li>Ссылка, запрещенная для индексации поисковиками <noindex--> <a href ="http://example.com" rel="nofollow"> Неиндексируемая ссылка </a> </noindex--> </li>
+			<li> Ссылка контекстная в тексте абзаца:
+						<p id="Статья">
+						Кот Шрёдингера — мысленный эксперимент, предложенный одним из создателей <a href = "https://ru.wikipedia.org/wiki/Квантовая_механика"> квантовой механики </a>
+						Эрвином Шрёдингером в 1935 году при обсуждении физического смысла волновой функции. 
+						В ходе эксперимента возникает <a href ="https://ru.wikipedia.org/wiki/Принцип_суперпозиции_(квантовая_механика)"> суперпозиция </a> живого и мёртвого кота, что выглядит абсурдно с точки зрения здравого смысла. </p> </li>
+			<li>Ссылка-изображение
+			 <br /> <a id="img"> </a> <a href="https://www.youtube.com/watch?v=XtHmxYbyfis"><img alt ="cat" src="https://i.pinimg.com/564x/8a/4b/cd/8a4bcdf90cd739ce147de8b0ba021f5d.jpg" class="img-fluid img-ref"> </a> 
+			</li>
+			<li> Ссылки из прямоугольных и круглых областей картинки:
+				<map name = "click">
+					<area alt="тортик" shape = "rect" coords = "250,250,400,400" href = "https://ru.wikipedia.org/wiki/Торт" title = "тортик">
+					<area alt="котик" shape = "circle" coords = "350,200,200" href = "https://ru.wikipedia.org/wiki/Кошка" title = "котик">
+				</map>
+				
+				<div><img alt="Картинка" src = "https://i.pinimg.com/750x/4c/22/a1/4c22a1b1b7ff5935f18ee87dd6f85c40.jpg" class="img-fluid img-ref" usemap = "#click"></div>
+			</li>
+			<li><a href ="./example.html "> Относительная ссылка на страницу в текущем каталоге </a> </li>
+			<li> <a href ="./about/example.html "> Относительная ссылка на страницу в каталоге about </a> </li>
+			<li> <a href ="../example.html "> Относительная ссылка на страницу в каталоге уровнем выше текущего </a> </li>
+			<li> <a href ="../../example.html "> Относительная ссылка на страницу в каталоге двумя уровнями выше </a> </li>
+			<li> <a href = "/" > Сокращенная ссылка на главную страницу </a> </li>
+			<li> <a href = "/example.html" > Сокращенная ссылка на внутреннюю страницу </a> </li>
+		</ol>
+            </div>
+            <div id="table" class="grey-div mt-3 mb-3r order-1 order-md-0">
+                <h2>Таблица</h2>
+                <table class="table-bordered border-dark text-center col-4">
+                    <thead>
+                        <tr>
+                            <th class="even">1</th>
+                            <th class="even">2</th>
+                            <th class="even">3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td class="even">7</td>
+                            <td class="even">8</td>
+                            <td class="even">9</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td class="even" rowspan=2>13</td>
+                            <td class="even">14</td>
+                            <td class="even">15</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="even">16</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="grey-div mt-3" id="form">
+                <h2>Анкета</h2>
+                <form>
+                    <p>
+                        <b>Ваше имя</b><br>
+                        <input type="text" name="name">
+                    </p>
+                    <p>
+                        <b>Электронная почта</b><br>
+                        <input type="email" name="email">
+                    </p>
+                    <p>
+                        <b>Дата рождения</b><br>
+                        <input type="date" name="birthdate">
+                    </p>
+                    <p>
+                        <b>Пол</b><br>
+                        <input type="radio" name="sex" value="male">Мужской<br>
+                        <input type="radio" name="sex" value="female">Женский
+                    </p>
+                    <p>
+                        <b>Количество конечностей</b><br>
+                        <input type="radio" name="limbs" value="2">2<br>
+                        <input type="radio" name="limbs" value="3">3<br>
+                        <input type="radio" name="limbs" value="4">4<br>
+                        <input type="radio" name="limbs" value="5+">5+
+                    </p>
+                    <p>
+                        <b>Сверхспособности</b><br>
+                        <select>
+                            <option disabled selected>Выберете сверхспособность</option>
+                            <option value="fly">Левитация</option>
+                            <option value="immortality">Бессмертие</option>
+                            <option value="transparency">Прохождение сквозь стены</option>
+                            <option value="session">Сдача сессии на "отлично"</option>
+                        </select>
+                    </p>
+                    <p>
+                        <b>Биография</b><br>
+                        <textarea name="biography" placeholder="Введите вашу биографию"></textarea>
+                    </p>
+                    <p>
+                        <strong>С контрактом ознакомлен</strong>
+                        <input type="checkbox" name="approval" value="agree">
+                    </p>
+                    <p>
+                        <input type="submit">
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="p-1">
+        <p>Компания © WeLoveCats. Все права защищены.</p>
+    </footer>
+
+</body>
+
+</html>

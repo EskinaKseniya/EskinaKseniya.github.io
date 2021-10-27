@@ -1,0 +1,68 @@
+body{
+    overflow-x: hidden;
+}
+header {
+    background-color: #fcf0e4;
+ 
+}
+.logo{
+	height: 100px;
+	width: 100px;
+}
+h1{
+font-family: "Comic Sans MS", "Comic Sans", cursive;
+color: pink;
+text-shadow: #fff -1px -1px 0, 
+             #333 1px 1px 0;
+}
+ h2{
+    color: #fcf0e4;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+	text-align : center;
+}
+
+main{
+    background-image: url(kotiki-milie-5.png);
+}
+.img-ref{
+    width: 35rem;
+}
+.fon{
+	background-color: pink;
+}
+.menu{
+	font-family: "Cormorant Garamond";
+    background-color: pink;
+    outline: 2px solid #000;
+    border: 3px solid #fff;
+    border-radius: 10px;
+}
+.grey-div
+{
+    background-color: pink;
+  
+}
+.nav-ref{
+    font-size: 20px;
+    border: 5px solid #5757a0;
+    background-color: #fcf0e4;
+	
+}
+footer {
+    padding: 10px 20px;
+        background: #fcf0e4;
+        color: black;
+		text-shadow: pink 0 0 2px;
+}
+.even{
+    background-color: rgb(221, 160, 221);
+}
+th, td{
+    background-color: rgb(250, 235, 215);
+}
+table
+{
+    height: 25vw;
+}
