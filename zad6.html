@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кулькулятор</title>
+    <link rel="stylesheet" href="style6.css">
+</head>
+
+<body>
+    <form>
+        <h1>Калькулятор стоимости заказа:</h1>
+        <p> 
+            <b> Цена товара: </b> <br>
+            <input type = "text" id="price" />
+        </p>
+        <p>
+            <b> Количество товара: </b> <br>
+            <input type = "text" id="quantity" />
+        </p>
+        <button type = "button" id="button">
+            Итог
+        </button>
+        <p id="result"> </p>
+    </form>
+    <form>
+        <h1>Калькулятор стоимости товара или услуги:</h1>
+        <div>
+            <div id="flex">
+                <p> 
+                <div>
+                    <div class="tablet">
+                    <b> Выберите товар: </b> 
+                    </div><br>
+                    <div>
+                    <select name="myselect" onChange="Sweets()" id="sweet">
+                        <option value="400">Печенье</option>
+                        <option value="1200">Тортик</option>
+                        <option value="650">Булочки</option>
+                    </select>
+                    </div>
+                </div>
+                <div>
+                    <div class="tablet">
+                        <b> Количество товара: </b>
+                    </div><br>
+                    <div>
+                        <input type = "number" min="1" max="30" id="quantity1" /> 
+                        <span id="sht"> кг </span> <br><br>
+                    </div>
+                </div>
+                </p>
+            </div>
+        
+            
+        </div>
+       <p class="candy">Цена 1кг: Торт-1200р, </p>
+       <p class="candy">Печенье-400p, Булочки-650р</p>
+            <div id="400" style="display: none"></div>
+            <div id="1200" style="display: none">
+                <div class="tablet1"> 
+                   <b> Выбирите дополнительные услуги: </b>
+                </div>
+                    <input type="radio" name="tort"  value="500"> Авторский дизайн торта <br>
+                    <input type="radio" name="tort" value="300"> Украшение свежими фруктами <br>
+                    <input type="radio" name="tort" value="400"> Украшение расписными пряниками <br>
+                <p class="candy">Авторский дизайн-500р; Украшение фруктами-300р;</p>
+                <p class="candy">Украшение пряниками-400р;</p>
+            </div>
+            <div id="650" style="display: none">
+                <div class="tablet1"> 
+                    <b> Выбирите дополнительные услуги: </b>
+                 </div>
+                 <input type="checkbox" name="buns" value="200"> Покрыть сверху кремом <br>
+                 <input type="checkbox" name="buns" value="120"> Покрыть кондитерской посыпкой <br>
+                 <input type="checkbox" name="buns" value="100"> Украсить коробку для булочек <br>
+                 <p class="candy">Цена 1кг: Покрыть кремом-200р; Покрыть посыпкой-120р;</p>
+                 <p class="candy">Украсить коробку-100р;</p>
+            </div>
+            <div id="adress"></div>
+            <p id="blocktext">
+           <button type = "button" id="button1"> 
+            Итог
+            </button>
+            </p>
+            <div id="answer"></div>
+    </form>
+    <script src="script1.js"></script>
+</body>
+
+</html>
