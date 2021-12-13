@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Bootstrap Bundle JS (jsDelivr CDN) -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style7.css">
+</head>
+<body>
+
+    <main>
+        <div class="osn mt-4">
+            <div class="container pb-3">
+            <div class="row"> <div class="col-lg-12"> <h1 class="text-center text-dark">Калькулятор стоимости заказа</h1> </div> 
+            <div class="col-md-12"> 
+        <form id="form">
+            <div class="form-group col-md-6 col-sm-6">
+                <label for="multipleselect" class="badge bg-warning" style=" font-size: smaller">Выберите товар:</label>  
+                <div><small class="form-text text-muted">Цена 1кг: Печенье-400р; Тортик-1200р; Булочки-650р;</small></div>
+        <select name="myselect">
+        <option value="1">Печенье</option>
+        <option value="2">Тортик</option>
+        <option value="3">Булочки</option>
+        </select>
+       </div>
+        <div class="calc-section">
+        <label class="checkbox-wrapper title-bold section-title .section-title-vertical-center">
+        <span class="badge bg-warning mt-3" style="font-size: smaller">Количество товаров</span>
+        <input type="number" min="1" max="30" value="1" id="square-input" class="title__inline input-short" />
+        <span class="title__inline">кг</span>
+        </label>
+        </div>
+        
+        <div class="calc-section" id="radios">
+            <span class="badge bg-warning mt-3" style="font-size: smaller">Выберите дополнительные услуги:</span>
+            <div class="form-check">
+            <label class="radio-wrapper" data-name="mobile"><input type="radio" class="radio" name="type" value="500"> Авторский дизайн торта</label>
+        </div>
+        <div class="form-check">
+            <label class="radio-wrapper" data-name="mobile"><input type="radio" class="radio" name="type" value="300"> Украшение свежими фруктами </label>
+        </div>
+        <div class="form-check">
+            <label class="radio-wrapper" data-name="mobile"><input type="radio" class="radio" name="type" value="400"> Украшение рапсписными пряниками </label>
+        </div>
+        <small class="form-text text-muted"> Авторский дизайн-500р; Украшение свежими фруктами-300р; Украшение рапсписными пряниками-400р;</small>
+        </div>
+        
+        <div class="calc-section" id="checkbox">
+            <span class="badge bg-warning mt-3" style="font-size: smaller">Выберите дополнительные опции:</span>
+            <div class="form-check"> <label><input type="checkbox" class="checkbox" name="ceiling" value="200"> Покрыть сверху кремом</label></div>
+            <div class="form-check"> <label><input type="checkbox" class="checkbox" name="ceiling" value="120"> Покрыть кондитерской посыпкой </label></div>
+                <div class="form-check"> <label><input type="checkbox" class="radio" name="ceiling" value="100">Украсить коробку для булочек</label></div>
+                <small class="form-text text-muted">Цена 1кг: Покрыть кремом-200р; Покрыть посыпкой-120р; Украсить коробку-100р;</small>
+           </div>
+        
+        
+        <div class="calc-price">
+        <div class="badge bg-success mt-3" style="border: 1px solid black; font-size: medium; color:whitesmoke">Итоговая стоимость:</div>
+        <span id="total-price">0</span>
+        рублей
+        </div>
+        
+        </form>
+            </div>
+            </div>
+            </div>
+        </div>
+        </main>
+        <div class="wrapper">
+            <div class="slider">
+                <div class="slider__item">
+                    <img src="img/01.jpeg" alt="">
+                </div>
+                <div class="slider__item">
+                    <img src="img/02.jpeg" alt="">
+                </div>
+                <div class="slider__item">
+                    <img src="img/03.jpeg" alt="">
+                </div>
+                <div class="slider__item">
+                    <img src="img/04.jpeg" alt="">
+                </div>
+                <div class="slider__item">
+                    <img src="img/05.jpeg" alt="">
+                </div>
+                <div class="slider__item">
+                    <img src="img/06.jpeg" alt="">
+                </div>
+                <div class="slider__item">
+                    <img src="img/07.jpeg" alt="">
+                </div>
+                <div class="slider__item">
+                    <img src="img/08.jpeg" alt="">
+                </div>
+                <div class="slider__item">
+                    <img src="img/09.jpeg" alt="">
+                </div>
+                <div class="slider__item">
+                    <img src="img/10.jpeg" alt="">
+                </div>
+                <div class="slider__item">
+                    <img src="img/11.jpeg" alt="">
+                </div>
+                <div class="slider__item">
+                    <img src="img/12.jpeg" alt="">
+                </div>
+                <div class="slider__item">
+                    <img src="img/13.jpeg" alt="">
+                </div>
+                <div class="slider__item">
+                    <img src="img/14.jpeg" alt="">
+                </div>
+                <div class="slider__item">
+                    <img src="img/15.jpeg" alt="">
+                </div>
+                <div class="slider__item">
+                    <img src="img/16.jpeg" alt="">
+                </div>
+
+            </div>
+        </div>
+        <!--подключаем jQuery-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!--подключаем слайдер Slick-->
+        <script src="slick.min.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>
