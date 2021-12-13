@@ -1,63 +1,88 @@
-console.log("Test");
-var price = document.getElementById("price");
-var quantity = document.getElementById("quantity");
-var butt = document.querySelector("#button");
-var result;
-function calc(){
-    if((/^[1-9][0-9]*$/).test(price.value) && (/^[1-9][0-9]*$/).test(quantity.value)){
-        result = price.value*quantity.value;
-        document.getElementById("result").innerHTML = result;
-    }
-    else {
-        alert("Некорректный ввод данных. Введите положительные числа ПОЖАЛУЙСТА!!");
-    }
-}
-window.addEventListener("DOMContentLoaded", function() {
-    butt.addEventListener("click", calc);
-});
+// Элементы формы
+const squareInput = document.querySelector('#square-input');
+const inputs = document.querySelectorAll('input');
 
+//селектор
+const select = document.getElementsByName('myselect')
 
-///////////////////////////////////////////////////////////////////////////////////////
-var butt1 = document.querySelector("#button1");
-var s =  document.getElementById("sweet");
-var quantity1 = document.getElementById("quantity1");
-function Sweets()
-{
-document.getElementById("adress").innerHTML = document.getElementById(s.value).innerHTML;
+// Радиокнопки
+const radioType = document.querySelectorAll('input[name="type"]');
+const chType = document.querySelectorAll('input[name="ceiling"]');
+
+// Чекбокс
+const ceilings = document.querySelector('input[name="ceiling"]');
+
+const basePrice = 0;
+const totalPriceElement = document.querySelector('#total-price');
+
+let selectnow=1;
+let radios = document.getElementById('radios');
+let checkbox = document.getElementById('checkbox');
+
+function calculate() {
+let totalPrice;
+let Price;
+const reg = /[^0-9]|\b0[0-9]+/;
+let price = document.getElementsByName("field1");
+let amount = document.getElementsByName("field2");
+if(reg.test(parseInt(squareInput.value)) === true){
+alert("Повторите ввод данных");
+totalPriceElement.innerText = "0";
 }
-function Result()
-{
-var ans = document.getElementById("answer");
-if((/^[1-9][0-9]*$/).test(quantity1.value)){
-    if(s.value == 400)
-    ans.innerHTML=parseInt(s.value)*parseInt(quantity1.value);
-    else{
-        if(s.value == 1200){
-            var inp = document.getElementsByName('tort');
-            for (var i = 0; i < inp.length; i++) {
-                if (inp[i].type == "radio" && inp[i].checked) {
-                    ans.innerHTML=parseInt(s.value)*parseInt(quantity1.value)+ parseInt(inp[i].value);
-                }
-            }
-        }
-        else{
-            if(s.value == 650){
-                var inp1 = document.getElementsByName('buns');
-                var dopbuns = 0;
-                for (var j = 0; j < inp1.length; j++) {
-                    if (inp1[j].type == "checkbox" && inp1[j].checked) {
-                        dopbuns+= parseInt(inp1[j].value);
-                    }
-                }
-                ans.innerHTML=(dopbuns + parseInt(s.value))*parseInt(quantity1.value);
-            }
-        }
-    }
+else{
+if(selectnow==1){ 
+totalPrice=400;
+totalPrice *= parseInt(squareInput.value);
+}
+else if(selectnow==2){ 
+totalPrice=1200;
+for (const radio of radioType) {
+if (radio.checked) {
+Price = parseInt(radio.value);
+}
+}
+totalPrice = totalPrice*parseInt(squareInput.value) + Price;
+}
+else if(selectnow==3){
+totalPrice=650;
+for (const ceilings of chType) {
+if (ceilings.checked) {
+totalPrice = totalPrice + parseInt(ceilings.value);
+}}
+totalPrice *= parseInt(squareInput.value);
+}
+const formatter = new Intl.NumberFormat('ru');
+totalPriceElement.innerText = formatter.format(totalPrice);
+}
+}
+window.addEventListener('DOMContentLoaded', function (event) {
+calculate();
+radios.style.display = "none";
+checkbox.style.display = "none";
+select[0].addEventListener("change", function(event) {
+let select = event.target;
+if (select.value == "1") {
+radios.style.display = "none";
+checkbox.style.display = "none";
+selectnow = 1;
+}
+else if(select.value == "2") {
+radios.style.display = "block";
+checkbox.style.display = "none";
+selectnow = 2;
 }
 else {
-    alert("Некорректный ввод данных. Введите положительные числа ПОЖАЛУЙСТА!!");
+radios.style.display = "none";
+checkbox.style.display = "block";
+selectnow = 3;
 }
-}
-window.addEventListener("DOMContentLoaded", function() {
-    butt1.addEventListener("click", Result);
+calculate();
 });
+
+for (const input of inputs) {
+input.addEventListener('input', function () {
+calculate();
+});
+}
+});
+
